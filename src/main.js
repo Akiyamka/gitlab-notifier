@@ -19,7 +19,7 @@ import { pause } from './utils';
       const message = getMessage(mr)
       log.debug(message)
       notifier.notify({
-        title: `GitLab: ${mr.name} was updated`,
+        title: `GitLab`,
         message: message,
         sound: true,
         open: mr.url
