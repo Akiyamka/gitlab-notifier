@@ -8,6 +8,11 @@ function objectToString(obj) {
 export function getMessage(mr) {
   return `[${mr.name}]:
 ${
-    mr.changes.map(c => `  - ${c.id}: ${c.before} → ${c.after}`).join('\n')
+    mr.changes.map(c => {
+      const haveBefore = c.before !== undefined;
+      return haveBefore
+        ? `  - ${c.id}: ${c.before} → ${c.after}`
+        : `  - ${c.id}: ${c.after}`;
+    }).join('\n')
   }`
 }
