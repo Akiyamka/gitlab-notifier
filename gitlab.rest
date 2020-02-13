@@ -1,0 +1,6 @@
+@token = yout_token_here
+
+### Get all Merge requests
+GET https://gitlab.com/api/v4/merge_requests
+    ?state=opened
+Private-Token: {{token}}

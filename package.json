@@ -1,0 +1,21 @@
+{
+  "name": "gitlab-notifier",
+  "version": "0.0.1",
+  "description": "Notify you about GitLab events",
+  "main": "index.js",
+  "author": "Alexander Dubinin",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "node ./index.js",
+    "start": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "isomorphic-unfetch": "^3.0.0",
+    "node-notifier": "^6.0.0",
+    "nodemon": "^2.0.2"
+  }
+}
